@@ -2,5 +2,21 @@
   "dependencies": {
     "mongodb": "^6.6.2",
     "mongoose": "^8.4.0"
-  }
+  },
+  "name": "upskillect",
+  "description": "Personalized, Flexible, &amp; Affordable training experience for career shifters.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "frontend": "cd frontend && npm run dev",
+    "backend": "cd backend && npm run dev",
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
