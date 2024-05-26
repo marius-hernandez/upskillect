@@ -17,9 +17,10 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 
 const formSchema = z.object({
-  username: z.string().min(2).max(50),
+  email: z.coerce.string().email("Wrong email format brother").min(5),
+  password: z.string().min(6, "Password is not enough brother")
 })
-const form = useForm()
+
 
 const Login = () => {
 
@@ -27,7 +28,8 @@ const Login = () => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      username: "",
+      email: "",
+      password: "",
     },
   })
  
@@ -37,32 +39,44 @@ const Login = () => {
     // ✅ This will be type-safe and validated.
     console.log(values)
   }
-
-
   return (
-    <div className="h-screen grid place-content-center">
-      <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="w-2/3 space-y-6">
+      <div className='grid place-items-center h-screen border-primary '>
+        <h1 className="font-bold text-2xl">mine suki</h1>
+        <Form {...form}>
+        <form onSubmit={form.handleSubmit(onSubmit)} className="w-full max-w-xl grid gap-y-12 px-14 py-20 border-2 border-primary rounded-lg bg-gray-50">
           <FormField
             control={form.control}
-            name="username"
+            name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Username</FormLabel>
+                <FormLabel>Email</FormLabel>
                 <FormControl>
-                  <Input placeholder="shadcn" {...field} />
+                  <Input placeholder="Email" {...field}/>
                 </FormControl>
-                <FormDescription>
-                  This is your public display name.
-                </FormDescription>
                 <FormMessage />
               </FormItem>
+              
+            )}
+          />
+
+          <FormField
+            control={form.control}
+            name="password"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Password</FormLabel>
+                <FormControl>
+                  <Input type="password" placeholder="Password" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+              
             )}
           />
           <Button type="submit">Submit</Button>
         </form>
       </Form>
-    </div>
+      </div>
   )
 }
 
