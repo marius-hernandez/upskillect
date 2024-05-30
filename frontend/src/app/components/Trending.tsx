@@ -26,27 +26,30 @@ export async function Trending() {
                     <div>Loading</div>
                 ):(
                     products.map((product:any) =>(
-                        <CarouselItem key={product.id} className="pl-1 sm:basis-1/3  md:basis-1/4 lg:basis-1/5 bg-primary">
-                            <div className="p-1 grid h-full">
-                                <Card className="">
-                                    <CardContent className="">
-                                      <Image 
+                        <CarouselItem key={product.id} className="pl-1 sm:basis-1/3  md:basis-1/4 lg:basis-1/5 shadow-md hover:scale-105 duration-300">
+                            <div className="p-1 grid h-full w-full">
+                                <Card className="w-80">
+                                    <CardContent className="w-full">
+                                      <Image className="h-40 w-40 object-cover"
                                       src={product.images[0]} 
                                       alt={product.title}
                                       height={50}
                                       width={50}
                                       quality={50}
                                       priority={true}
+
                                       />
                                       
-                                    <div className="grid">
-                                      <p>{product.title}</p>
-                                      <p>P{product.price}</p>
-                                    </div>
+                                    <div className="">
+                                      <span className="text-gray-400 uppercase text-sm">Brand</span>
+                                      <p className="text-lg font-bold block truncate ... capitalize">{product.title}</p>
+                                      <div className="flex items-center">
+                                        <p className="text-lg font-semibold my-3">{product.price}</p>
+                                        <del>
+                                          <p className="text-sm text-gray-600 ml-2">{product.price}</p>
+                                        </del>
 
-                                    <div className="flex justify-around">
-                                      <Button>Add to Cart</Button>
-                                      <Button>See Flex</Button>
+                                      </div>
                                     </div>
                                     </CardContent>
                                 </Card>
