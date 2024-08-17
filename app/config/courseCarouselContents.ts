@@ -36,6 +36,39 @@ export const courseCarouselContents=[
                 duration: "4 month",
                 rating: 4.4,
                 startsAt: 250
+            },
+            {
+                courseTitle: "CourseTitle1",
+                institute:"Institute1",
+                location:"Location1",
+                duration: "1 month",
+                rating: 4.1,
+                startsAt: 250
+            },
+            {
+                courseTitle: "CourseTitle2",
+                institute:"Institute2",
+                location:"Location2",
+                duration: "2 month",
+                rating: 4.2,
+                startsAt: 250
+                
+            },
+            {
+                courseTitle: "CourseTitle3",
+                institute:"Institute3",
+                location:"Location3",
+                duration: "3 month",
+                rating: 4.3,
+                startsAt: 250
+            },
+            {
+                courseTitle: "CourseTitle4",
+                institute:"Institute4",
+                location:"Location4",
+                duration: "4 month",
+                rating: 4.4,
+                startsAt: 250
             }
         ]
     },
@@ -72,6 +105,39 @@ export const courseCarouselContents=[
                 institute:"2Institute4",
                 location:"2Location4",
                 duration: "24 month",
+                rating: 4.4,
+                startsAt: 250
+            },
+            {
+                courseTitle: "CourseTitle1",
+                institute:"Institute1",
+                location:"Location1",
+                duration: "1 month",
+                rating: 4.1,
+                startsAt: 250
+            },
+            {
+                courseTitle: "CourseTitle2",
+                institute:"Institute2",
+                location:"Location2",
+                duration: "2 month",
+                rating: 4.2,
+                startsAt: 250
+                
+            },
+            {
+                courseTitle: "CourseTitle3",
+                institute:"Institute3",
+                location:"Location3",
+                duration: "3 month",
+                rating: 4.3,
+                startsAt: 250
+            },
+            {
+                courseTitle: "CourseTitle4",
+                institute:"Institute4",
+                location:"Location4",
+                duration: "4 month",
                 rating: 4.4,
                 startsAt: 250
             }

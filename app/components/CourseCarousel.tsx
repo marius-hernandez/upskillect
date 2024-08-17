@@ -11,11 +11,13 @@ import {
 import { courseCarouselContents } from "../config/courseCarouselContents";
 
 interface Props {
-    section: string
+  section: string;
 }
 
 export function CourseCarousel(props: Props) {
-    const section= courseCarouselContents.filter((s)=>s.title===props.section)[0]
+  const section = courseCarouselContents.filter(
+    (s) => s.title === props.section
+  )[0];
   return (
     <>
       <h1>{section.title}</h1>
@@ -26,17 +28,21 @@ export function CourseCarousel(props: Props) {
         className="w-full"
       >
         <CarouselContent>
-          {Array.from({ length: 20 }).map((_, index) => (
-            <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/5">
-              <div className="p-1">
-                <Card>
-                  <CardContent className="flex aspect-square items-center justify-center p-6">
-                    <span className="text-3xl font-semibold">{index + 1}</span>
-                  </CardContent>
-                </Card>
-              </div>
-            </CarouselItem>
-          ))}
+          {section.contents.map((course, key) => {
+            return (
+              <CarouselItem key={key} className="md:basis-1/3 lg:basis-1/5">
+                <div className="p-1">
+                  <Card>
+                    <CardContent className="flex aspect-square items-center justify-center p-6">
+                      <span className="font-semibold">
+                        {course.courseTitle}
+                      </span>
+                    </CardContent>
+                  </Card>
+                </div>
+              </CarouselItem>
+            );
+          })}
         </CarouselContent>
         <CarouselPrevious />
         <CarouselNext />
