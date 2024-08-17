@@ -15,15 +15,15 @@ export default function Hero() {
   return (
     <>
       <LandingPrimaryImageCtaSection
-        title="Landing page in minutes"
-        description="Get 10x more done with Shadcn UI, React & Next.js, and say goodbye to repetitive tasks. You'll never go back."
+        title="Hi I’m Upskai,"
+        description="Let’s start your flexible, personalized, & affordable journey!"
         imageSrc="/upskai.png"
         imageAlt="Upskai"
         minHeight={500}
         
       >
         <Button size="xl" asChild>
-          <a href="#">Let's get started</a>
+          <a href="#">Let&apos;s get started</a>
         </Button>
 
         <Button size="xl" variant="outlinePrimary">
