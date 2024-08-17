@@ -16,7 +16,7 @@ export default function Home() {
         <Hero />
         <Motto />
         <Feature />
-        <CourseCarousel />
+        <CourseCarousel section={"Limited Training Sale"} />
         <Testimonials />
         <FAQ />
       </main>
