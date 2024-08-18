@@ -20,7 +20,7 @@ const Feature = () => {
           },
           {
             title: "UpSeek",
-            description: "Discover Nearby Training Institutes and Utilizes geolocation services to find training institutes nearby.",
+            description: "Discover nearby training institutes and utilizes geolocation services to find training institutes nearby.",
             icon: <MapPin />,
           },
           {

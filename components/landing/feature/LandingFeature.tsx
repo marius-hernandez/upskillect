@@ -1,4 +1,5 @@
 import { Button } from '@/components/shared/ui/button';
+import { buttonVariants } from '@/components/ui/button';
 import clsx from 'clsx';
 import Link from 'next/link';
 
@@ -37,7 +38,7 @@ export const LandingFeature = ({
 
       <h3 className="text-lg font-semibold">{title}</h3>
       <p className="text-sm text-gray-800 dark:text-gray-200">{description}</p>
-      <Link href={'#'} className='btn'>Try it</Link>
+      <Link href={'#'} className={buttonVariants({ variant: "secondary" })}>Try it</Link>
     </div>
   );
 };

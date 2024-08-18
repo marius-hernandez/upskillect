@@ -7,8 +7,8 @@ import { LandingProductHuntAward } from "@/components/landing/social-proof/Landi
 import { LandingSocialProof } from "@/components/landing/social-proof/LandingSocialProof";
 import { LandingSocialProofBand } from "@/components/landing/social-proof/LandingSocialProofBand";
 import { LandingSocialProofBandItem } from "@/components/landing/social-proof/LandingSocialProofBandItem";
+import { Button } from "@/components/ui/button";
 
-import { Button } from "@/components/shared/ui/button";
 import { colors } from "@/data/config/colors";
 
 export default function Hero() {
@@ -22,17 +22,17 @@ export default function Hero() {
         minHeight={500}
         
       >
-        <Button size="xl" asChild>
-          <a href="#">Let&apos;s get started</a>
+        <Button>
+          Let&apos;s get started
         </Button>
 
-        <Button size="xl" variant="outlinePrimary">
-          <a href="#">Read more</a>
+        <Button>
+          Read more
         </Button>
 
         <LandingDiscount
           className="w-full"
-          discountValueText="$350 off"
+          discountValueText="₱350 off"
           discountDescriptionText="for the first 10 customers (2 left)"
         />
       </LandingPrimaryImageCtaSection>

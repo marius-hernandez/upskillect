@@ -17,36 +17,36 @@ import Image from "next/image";
 
 const components: { title: string; href: string; description: string }[] = [
   {
-    title: "Alert Dialog",
+    title: "Engineering",
     href: "/docs/primitives/alert-dialog",
     description:
       "A modal dialog that interrupts the user with important content and expects a response.",
   },
   {
-    title: "Hover Card",
+    title: "Information Technology",
     href: "/docs/primitives/hover-card",
     description:
       "For sighted users to preview content available behind a link.",
   },
   {
-    title: "Progress",
+    title: "Caretaking",
     href: "/docs/primitives/progress",
     description:
       "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
   },
   {
-    title: "Scroll-area",
+    title: "Machinery",
     href: "/docs/primitives/scroll-area",
     description: "Visually or semantically separates content.",
   },
   {
-    title: "Tabs",
+    title: "Literature",
     href: "/docs/primitives/tabs",
     description:
       "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
   },
   {
-    title: "Tooltip",
+    title: "Arts and Design",
     href: "/docs/primitives/tooltip",
     description:
       "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
@@ -56,7 +56,7 @@ const components: { title: string; href: string; description: string }[] = [
 export function Navbar() {
   return (
     <>
-      <div className="navbar bg-base-100">
+      <div className="navbar">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -142,7 +142,7 @@ export function Navbar() {
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+                <NavigationMenuTrigger>Industry</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                     {components.map((component) => (
