@@ -6,7 +6,7 @@
 @layer base {
   :root {
     --background: 248 100% 95%;
-    --foreground: 248 5% 0%;
+    --foreground: 100 5% 0%;
     --card: 248 50% 90%;
     --card-foreground: 248 5% 10%;
     --popover: 248 100% 95%;
@@ -50,4 +50,12 @@
     --radius: 0.5rem;
   }
 
+}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
