@@ -70,7 +70,7 @@ export function CourseCarousel(props: Props) {
                           </p>
                         </div>
                         <div className="flex justify-between items-center">
-                          <Link href={"#"} className={`${buttonVariants({ variant: "secondary" })} btn btn-sm font-normal`}>
+                          <Link href={`/${course.institute}/${course.courseTitle}`} className={`${buttonVariants({ variant: "secondary" })} btn btn-sm font-normal`}>
                             See more
                           </Link>
                           <h1>
