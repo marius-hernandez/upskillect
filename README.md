@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Upskillect
 
-First, run the development server:
+Personalized, Flexible, &amp; Affordable training experience for career shifters.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![Logo](https://i.ibb.co/BZ17hdM/Up-Skillect.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## About Us
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+Upskillect empowers you to gain skills and knowledge on your own terms.  We offer a seamless and personalized training experience that fits your schedule and learning style.
 
-To learn more about Next.js, take a look at the following resources:
+## What We Do
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+***Upskillect*** is a platform that connects learners with training institutes, offering a  flexible and blended learning approach.  We provide three key features to make upskilling easier than ever:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**UpFlex**: Break down training programs into manageable chunks that you can consume at your own pace.
 
-## Deploy on Vercel
+**Upseek**: Discover nearby training institutes that offer courses relevant to your interests.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Upskai**: Your AI companion personalizes your learning journey by recommending courses and creating a roadmap that aligns with your goals.
+Who We Help
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Upskillect is designed for busy professionals who want to develop new skills without sacrificing their work-life balance.  We also cater to training institutes seeking to expand their reach and attract new students.
+
+## Why Upskillect?
+
+- Flexible Training: Learn on your schedule with UpFlex.
+- Personalized Learning: Upskai tailors your training journey to your needs.
+
+- Uninterrupted Work: Upskillect integrates seamlessly with your busy life.
+**Join the Upskilling Movement!**
+
+Our passionate team is dedicated to making upskilling accessible to everyone.
+
+Be part of our journey towards revolutionizing training!
+
+
