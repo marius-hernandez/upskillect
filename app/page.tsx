@@ -11,14 +11,15 @@ import { CourseCarousel } from "./components/CourseCarousel";
 export default function Home() {
   return (
     <>
-      <main className="px-32 pt-3">
+      <main className="px-32 pt-3 pb-32">
         <Navbar />
         <Hero />
         <Motto />
         <Feature />
-        <CourseCarousel section={"Limited Training Sale"} />
+        <CourseCarousel section={"Trainings Near You"} />
         <Testimonials />
         <FAQ />
+        <CourseCarousel section={"Limited Training Sale"} />
       </main>
       <Footer />
     </>

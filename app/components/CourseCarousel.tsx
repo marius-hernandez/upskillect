@@ -40,7 +40,7 @@ export function CourseCarousel(props: Props) {
                     <CardContent className=" p-0 items-end justify-end">
                       <div className=" rounded-t-lg w-full h-[150px] relative overflow-hidden">
                         <Image
-                          src="/sampleCoursePhoto.jpeg"
+                          src={`https://picsum.photos/seed/${Math.floor(Math.random() * 1000)}/200/300`}
                           alt="pic"
                           style={{ objectFit: "cover" }}
                           fill

@@ -14,6 +14,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -169,7 +170,7 @@ export function Navbar() {
         </div>
 
         <div className="navbar-end">
-          <a className="btn">Sign Up</a>
+          <Button>Sign up</Button>
         </div>
       </div>
     </>
