@@ -7,7 +7,7 @@ export async function middleware(req:NextRequest){
 
     const {
         data:{
-            session
+            session 
         }
     }= await supabase.auth.getSession()
 
