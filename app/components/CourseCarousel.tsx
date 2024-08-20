@@ -1,5 +1,4 @@
-import * as React from "react";
-
+"use client";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -13,15 +12,38 @@ import Image from "next/image";
 import Link from "next/link";
 import { MapPin } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
+import { useEffect, useState } from "react";
+import { supabase } from "@/lib/supabaseClient";
 
 interface Props {
   section: string;
 }
 
 export function CourseCarousel(props: Props) {
+  const [courses, setCourses]=useState({})
+  const getCourses = async () => {
+    try {
+      const { data, error } = await supabase
+        .from("course")
+        .select("*")
+        .range(0, 15);
+      if (error) throw error;
+      setCourses(data)
+      console.log(data)
+      return data
+    } catch (error) {
+      return error;
+    }
+  };
+
   const section = courseCarouselContents.filter(
     (s) => s.title === props.section
   )[0];
+
+  useEffect(() => {
+    getCourses()
+  },[]);
+
   return (
     <>
       <h1 className="text-2xl font-semibold py-5">{section.title}</h1>
@@ -40,7 +62,9 @@ export function CourseCarousel(props: Props) {
                     <CardContent className=" p-0 items-end justify-end">
                       <div className=" rounded-t-lg w-full h-[150px] relative overflow-hidden">
                         <Image
-                          src={`https://picsum.photos/seed/${Math.floor(Math.random() * 1000)}/200/300`}
+                          src={`https://picsum.photos/seed/${Math.floor(
+                            Math.random() * 1000
+                          )}/200/300`}
                           alt="pic"
                           style={{ objectFit: "cover" }}
                           fill
@@ -58,23 +82,30 @@ export function CourseCarousel(props: Props) {
                             href={"#"}
                             className="font-light text-sm float-right"
                           >
-                            {`${course.institute.substring(0,20)}...`}
+                            {`${course.institute.substring(0, 20)}...`}
                           </Link>
                         </div>
                         <div className="row-span-2">
                           <span className="font-semibold ">
-                            {`${course.courseTitle.substring(0,25)}...`}
+                            {`${course.courseTitle.substring(0, 25)}...`}
                           </span>
                           <p className="text-xs font-light text-justify indent-6 leading-relaxed">
                             {course.description.substring(0, 80) + "..."}
                           </p>
                         </div>
                         <div className="flex justify-between items-center">
-                          <Link href={`/${course.institute}/${course.courseTitle}`} className={`${buttonVariants({ variant: "secondary" })} btn btn-sm font-normal`}>
+                          <Link
+                            href={`/${course.institute}/${course.courseTitle}`}
+                            className={`${buttonVariants({
+                              variant: "secondary",
+                            })} btn btn-sm font-normal`}
+                          >
                             See more
                           </Link>
                           <h1>
-                            <span className="text-sm font-light">Starts at </span>
+                            <span className="text-sm font-light">
+                              Starts at{" "}
+                            </span>
                             <span className="font-bold text-green-600">
                               ₱{course.startsAt}
                             </span>

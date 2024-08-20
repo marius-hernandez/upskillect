@@ -1,3 +1,5 @@
+import { Navbar } from "@/app/components/Navbar";
+
 type CoursePageType={
     params:{
       institute: string,
@@ -9,10 +11,13 @@ type CoursePageType={
     const { institute, course } = params;
   
     return (
-      <div>
-        <h1>Institute: {institute}</h1>
-        <h2>Course: {course}</h2>
-      </div>
+      <>
+        <Navbar />
+        <section>
+          
+        </section>
+        
+      </>
     );
   }
   
