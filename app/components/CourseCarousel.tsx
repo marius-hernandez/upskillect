@@ -23,11 +23,7 @@ export function CourseCarousel(props: Props) {
   const [courses, setCourses]=useState({})
   const getCourses = async () => {
     try {
-      const { data, error } = await supabase
-        .from("course")
-        .select("*")
-        .range(0, 15);
-      if (error) throw error;
+      const data = await fetch(`${process.env.UPSKILLECT_NEST_URL}\courses`)
       setCourses(data)
       console.log(data)
       return data
