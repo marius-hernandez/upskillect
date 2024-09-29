@@ -11,7 +11,11 @@ import { CourseCarousel } from "./components/CourseCarousel";
 export default function Home() {
   return (
     <>
-      <main className="px-32 pt-3 pb-32">
+      <main className="
+      lg:px-32 
+      md:px-20
+      sm:px-10
+      pt-3 pb-32">
         <Navbar />
         <Hero />
         <Motto />

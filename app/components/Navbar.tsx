@@ -21,36 +21,36 @@ const components: { title: string; href: string; description: string }[] = [
     title: "Engineering",
     href: "/docs/primitives/alert-dialog",
     description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+      "Software, mechanical, computer, industrial, and civil engineering involve designing software, machines, computing systems, optimizing processes, and constructing infrastructure, respectively. Each field offers unique challenges and innovations.",
   },
   {
     title: "Information Technology",
     href: "/docs/primitives/hover-card",
     description:
-      "For sighted users to preview content available behind a link.",
+      "The IT field involves managing and processing information using technology. Key areas include software development, network administration, cybersecurity, data analysis, and IT support. Each area plays a crucial role in maintaining and advancing digital infrastructure. ",
   },
   {
     title: "Caretaking",
     href: "/docs/primitives/progress",
     description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+      "Involves providing essential support and assistance to individuals, ensuring their well-being, safety, and comfort. This includes tasks like personal care, medication management, and emotional support. ",
   },
   {
     title: "Machinery",
     href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
+    description: "Involves designing, manufacturing, and maintaining mechanical devices and systems. This includes engines, tools, and industrial equipment, ensuring efficiency and reliability in various applications.",
   },
   {
     title: "Literature",
     href: "/docs/primitives/tabs",
     description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+      "Involves the creation and study of written works, including fiction, poetry, and essays. It explores human experiences, emotions, and cultures through storytelling and analysis.",
   },
   {
     title: "Arts and Design",
     href: "/docs/primitives/tooltip",
     description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+      "Involves creating visual, auditory, and performance works that express ideas and emotions. This includes painting, sculpture, graphic design, fashion, and multimedia arts.",
   },
 ];
 
