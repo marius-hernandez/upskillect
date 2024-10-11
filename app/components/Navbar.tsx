@@ -57,7 +57,10 @@ const components: { title: string; href: string; description: string }[] = [
 export function Navbar() {
   return (
     <>
-      <div className="navbar">
+      <div className="navbar lg:px-32 
+      md:px-20
+      sm:px-10
+      pt-7">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -100,7 +103,7 @@ export function Navbar() {
             </ul>
           </div>
           {/* <a className="btn btn-ghost text-xl">daisyUI</a> */}
-          <Image src={'/logo.png'} width={200} height={200}  priority alt="logo" />
+          <Link href="/"><Image src={'/logo.png'} width={200} height={200}  priority alt="logo" /></Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <NavigationMenu className="navbar-center hidden lg:flex z-40 ">

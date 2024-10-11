@@ -16,7 +16,6 @@ export default function Home() {
       md:px-20
       sm:px-10
       pt-3 pb-32">
-        <Navbar />
         <Hero />
         <Motto />
         <Feature />

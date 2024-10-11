@@ -12,7 +12,6 @@ type CoursePageType={
   
     return (
       <>
-        <Navbar />
         <section>
           
         </section>

@@ -37,7 +37,7 @@ export const LandingFeature = ({
       </div>
 
       <h3 className="text-lg font-semibold">{title}</h3>
-      <p className="text-sm text-gray-800 dark:text-gray-200">{description}</p>
+      <p className="text-sm text-gray-800 dark:text-gray-200 text-justify">{description}</p>
       <Link href={'#'} className={buttonVariants({ variant: "secondary" })}>Try it</Link>
     </div>
   );
