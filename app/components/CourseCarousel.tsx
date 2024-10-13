@@ -47,7 +47,6 @@ export function CourseCarousel(props: Props) {
         opts={{
           align: "start",
         }}
-        className=" bg-red-400"
       >
         <CarouselContent className="h-full">
           {section.contents.map((course, key) => {
